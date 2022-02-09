@@ -1,7 +1,14 @@
+import Head from 'next/head';
+import styles from '../styles/home.module.scss'; 
+
 export default function Home() {
   return (
-    <div>
-      <h1>Página Inicial</h1>
-    </div>
+    <>
+      <Head>
+        <title> Início | Ignews </title>
+      </Head>
+
+      <h1 className={styles.title}> Página inicial </h1>
+    </>
   )
 }
