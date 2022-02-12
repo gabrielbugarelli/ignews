@@ -15,8 +15,8 @@ export const SignInButton = () => {
       type='button'
       className={styles.signInButton}
     >
-      <FaGithub color='#04d361'/> 
-        Welcome, Gabriel!
+      <FaGithub color='#04d361'/>
+        Welcome, {session.user.name}!
       <FiX />
     </button>
   ) :
