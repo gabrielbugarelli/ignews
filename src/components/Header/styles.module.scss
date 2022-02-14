@@ -12,20 +12,16 @@
   display: flex;
   align-items: center;
 
-  button {
-    margin-left: auto;
-  }
-
   nav {
     margin-left: 5rem;
-    margin-right: 5rem;
+    height: 5rem;
 
     a {
       display: inline-block;
       position: relative;
+      padding: 0 0.5rem;
       height: 5rem;
       line-height: 5rem;
-      padding: 0 0.5rem;
       color: var(--gray-300);
 
       transition: color 0.2s;
@@ -35,11 +31,11 @@
       }
 
       &:hover {
-        color: var(--gray-100);
+        color: var(--white);
       }
 
       &.active {
-        color: var(--gray-100);
+        color: var(--white);
         font-weight: bold;
       }
 
@@ -54,5 +50,9 @@
         background: var(--yellow-500);
       }
     }
+  }
+
+  button {
+    margin-left: auto;
   }
 }
